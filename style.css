@@ -1,0 +1,75 @@
+/* Globaalit tyylit */
+
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+.top_bar {
+    display: flex;
+    flex-direction: column;
+    margin-left: 3vw;
+}
+
+.nav_button_row {
+    display: flex;
+}
+
+.nav_button_row li {
+    list-style: none;
+}
+
+.branding {
+    display: flex;
+    align-items: center;
+}
+
+.nav_button_row li a {
+    padding: 10px;
+    text-decoration: none;
+}
+
+.logo {
+    width: 50px;
+    height: 50px;
+}
+
+/* Etusivun tyylit */
+
+.newest_review {
+    display: flex;
+    flex-direction: column;
+    margin-left: 3vw;
+
+}
+
+.review_list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-left: auto;
+    margin-right: 3vw;
+}
+
+.footer {
+    display: flex;
+    justify-content: center;
+    margin-top: auto;
+}
+
+/* Paikat-sivun tyylit */
+
+
+
+
+/* Esittely-sivun tyylit */
+
+
+
+
+/* Kontakti-sivun tyylit */
