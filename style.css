@@ -1,0 +1,168 @@
+/* Globaalit tyylit */
+
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+.top-bar {
+    display: flex;
+    flex-direction: column;
+    margin-left: 3vw;
+}
+
+.nav-button-row {
+    display: flex;
+}
+
+.nav-button-row li {
+    list-style: none;
+}
+
+.branding {
+    display: flex;
+    align-items: center;
+}
+
+.nav-button-row li a {
+    padding: 10px;
+    text-decoration: none;
+}
+
+.logo {
+    width: 50px;
+    height: 50px;
+}
+
+/* Tabletti- ja mobiilinäkymä */
+
+
+
+/* Etusivun tyylit */
+
+.newest-review {
+    display: flex;
+    flex-direction: column;
+    margin-left: 3vw;
+
+}
+
+.front-page-review-list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-left: auto;
+    margin-right: 3vw;
+    align-items: center;
+}
+
+.footer {
+    display: flex;
+    justify-content: center;
+    margin-top: auto;
+}
+
+.page-header {
+    margin: 20px 3vw;
+}
+
+/* Paikat-sivun tyylit */
+
+.review-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5vw;
+    justify-content: center;
+    margin-left: 10vw;
+    margin-right: 10vw;
+}
+
+.review-item {
+    display: flex;
+    flex-direction: column;
+    margin-left: auto;
+    margin-right: auto;
+    border: 2px solid black;
+    border-radius: 10px;
+    max-width: 25vw;
+    align-items: center;
+}
+
+
+.review-image {
+    max-width: 25vw;
+    height: auto;
+    margin: 20px
+}
+
+.paikat-button {
+    margin-bottom: 20px;
+}
+
+
+/* Esittely-sivun tyylit */
+
+.hero-section {
+    display: flex;
+    flex-direction: column;
+    margin: 20px 3vw;
+    align-items: center;
+}
+
+.hero-card-image-left {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    align-items: center;
+    justify-content: left;
+    margin: 20px 0 20px 0;
+    border: 2px solid black;
+    border-radius: 10px;
+    width: 80vw;
+}
+
+.hero-card-image-right {
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 20px;
+    align-items: center;
+    justify-content: right;
+    margin: 20px 0 20px 0;
+    border: 2px solid black;
+    border-radius: 10px;
+    width: 80vw;
+}
+
+.hero-image {
+    width: 300px;
+    height: auto;
+}
+
+.hero-card-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+/* Kontakti-sivun tyylit */
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contact-form form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 300px;
+}
