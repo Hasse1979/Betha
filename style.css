@@ -1,19 +1,40 @@
 /* Globaalit tyylit */
 
+:root {
+    --bg: #1F2022;
+    --accent: #DB0000;
+    --shade1: #444953;
+    --shade2: #787F8E;
+    --shade3: #9DA8BE;
+    --text: #FFFFFF;
+}
+
+html {
+    min-height: 100%;
+    background-color: var(--bg);
+}
+
 html, body {
-    height: 100%;
     margin: 0;
+    min-height: 100%;
 }
 
 body {
     display: flex;
     flex-direction: column;
+    min-height: 100vh;
+    width: 100%;
+    background: url("./kuvat/Betha_tausta.png") center/cover no-repeat scroll;
+    background-color: transparent;
+    color: var(--shade3);
 }
 
 .top-bar {
     display: flex;
     flex-direction: column;
     margin-left: 3vw;
+    position: relative;
+    z-index: 1;
 }
 
 .nav-button-row {
@@ -32,6 +53,20 @@ body {
 .nav-button-row li a {
     padding: 10px;
     text-decoration: none;
+    color: var(--text);
+}
+
+.nav-button-row li a:hover {
+    color: var(--accent);
+}
+
+.branding h1 {
+    color: var(--text);
+    margin-left: 10px;
+}
+
+h1, h2, h3, h4 {
+    color: var(--text);
 }
 
 .logo {
