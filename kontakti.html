@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" crossorigin="">
     <title>Kontakti - Betha-Testattu</title>
 </head>
 <body>
@@ -18,53 +19,33 @@
     </ul>
 </div>
 </header>
-// Kontakti-sivun sisältö alkaa tästä
 <div class="page-header">
     <h2>Ota yhteyttä</h2>
-    <p>Tämä on kontaktisivu.</p>
-        <div class="card">
+    <p>Valitse alta suora yhteydenottotapa.</p>
+    <div class="contact-cards">
+        <button class="card" type="button" data-action="tel:+358401234567">
             <h3>📞 Puhelin</h3>
             <p>Soita tai jätä soittopyyntö.</p>
-        </div>
+        </button>
 
-        <div class="card">
+        <button class="card" type="button" data-action="mailto:betha@support.fi">
             <h3>📧 Sähköposti</h3>
             <p>betha@support.fi</p>
-        </div>
+        </button>
 
-        <div class="card">
+        <button class="card" type="button" data-target="#map">
             <h3>📍 Sijainti</h3>
-            <p>Varaa aika tapaamiseen</p>
-        </div>
-</div>
-//yhteydenotto tapa alkaa tästä
+            <p>Katso kartta ja tule käymään.</p>
+        </button>
+    </div>
 
-<div class="contact-form">
-    <form action="#" method="post">
-        <form id="contactForm">
-            <label for="channel">Valitse yhteydenottokanava:</label>
-            <select id="channel" name="channel" required>
-                <option value="">--Valitse--</option>
-                <option value="phone">Puhelin</option>
-                <option value="email">Sähköposti</option>
-                <option value="location">Sijainti</option>
-            </select>
-        
-        <label for="name">Nimi:</label>
-        <input type="text" id="name" name="name" required>
-       
-        <label for="email">Sähköposti:</label>
-        <input type="email" id="email" name="email" required>
-        
-        <label for="message">Viesti:</label>
-        <textarea id="message" name="message" rows="5" required></textarea>
-        
-        <button type="submit">Tarkasta ja lähetä</button>
-    </form>
-    <p id="result"></p>
-</div>
+    <div class="map-section">
+        <div id="map" class="map-box"></div>
+    </div>
 </div>
 <script src="script.js"></script>
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" crossorigin=""></script>
+<script src="map.js"></script>
 
 <footer class="footer">
     <p>&copy; 2026 Betha-Testattu -Tiimi.</p>
