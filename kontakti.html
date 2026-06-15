@@ -18,12 +18,38 @@
     </ul>
 </div>
 </header>
+// Kontakti-sivun sisältö alkaa tästä
+<div class="page-header">
+    <h2>Ota yhteyttä</h2>
+    <p>Tämä on kontaktisivu.</p>
+        <div class="card">
+            <h3>📞 Puhelin</h3>
+            <p>Soita tai jätä soittopyyntö.</p>
+        </div>
 
-    <div class="page-header">
-<h2>Ota yhteyttä</h2>
-<p>Tämä on kontaktisivu.</p>
+        <div class="card">
+            <h3>📧 Sähköposti</h3>
+            <p>betha@support.fi</p>
+        </div>
+
+        <div class="card">
+            <h3>📍 Sijainti</h3>
+            <p>Varaa aika tapaamiseen</p>
+        </div>
+</div>
+//yhteydenotto tapa alkaa tästä
+
 <div class="contact-form">
     <form action="#" method="post">
+        <form id="contactForm">
+            <label for="channel">Valitse yhteydenottokanava:</label>
+            <select id="channel" name="channel" required>
+                <option value="">--Valitse--</option>
+                <option value="phone">Puhelin</option>
+                <option value="email">Sähköposti</option>
+                <option value="location">Sijainti</option>
+            </select>
+        
         <label for="name">Nimi:</label>
         <input type="text" id="name" name="name" required>
        
@@ -33,10 +59,12 @@
         <label for="message">Viesti:</label>
         <textarea id="message" name="message" rows="5" required></textarea>
         
-        <button type="submit">Lähetä</button>
+        <button type="submit">Tarkasta ja lähetä</button>
     </form>
+    <p id="result"></p>
 </div>
 </div>
+<script src="script.js"></script>
 
 <footer class="footer">
     <p>&copy; 2026 Betha-Testattu -Tiimi.</p>
