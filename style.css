@@ -166,3 +166,35 @@ body {
     gap: 10px;
     width: 300px;
 }
+
+/* Värit ja typografia */
+
+body {
+    background-color: #1f2022;
+    color: #ffffff;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:link {
+    color: #DB0000;
+}
+
+a:visited {
+    color: #DB0000;
+}
+
+a:hover {
+    color: #ac0000;
+}
+
+a:active {
+    color: #ac0000;
+}
+
+
+h1, h2, h3, h4, h5, h6 {
+    color: #9da8be;
+}
