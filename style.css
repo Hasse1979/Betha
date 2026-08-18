@@ -1,5 +1,9 @@
 /* Globaalit tyylit */
 
+* {
+    font-family: 'Arial', sans-serif;
+}
+
 html, body {
     height: 100%;
     margin: 0;
@@ -37,6 +41,7 @@ body {
 .logo {
     width: 50px;
     height: 50px;
+    padding: 10px;
 }
 
 /* Tabletti- ja mobiilinäkymä */
@@ -91,13 +96,14 @@ body {
     border-radius: 10px;
     max-width: 25vw;
     align-items: center;
+    padding: 10px;
 }
 
 
 .review-image {
     max-width: 25vw;
     height: auto;
-    margin: 20px
+    margin: 20px;
 }
 
 .paikat-button {
@@ -123,7 +129,7 @@ body {
     margin: 20px 0 20px 0;
     border: 2px solid black;
     border-radius: 10px;
-    width: 80vw;
+    width: 75vw;
 }
 
 .hero-card-image-right {
@@ -135,7 +141,7 @@ body {
     margin: 20px 0 20px 0;
     border: 2px solid black;
     border-radius: 10px;
-    width: 80vw;
+    width: 75vw;
 }
 
 .hero-image {
@@ -148,6 +154,7 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    padding: 20px;
 }
 
 
@@ -176,25 +183,72 @@ body {
 
 a {
     text-decoration: none;
+    font-weight: bold;
+    color: #ff3a3a;
 }
 
-a:link {
-    color: #DB0000;
+/* a:link {
+    color: #b90000;
 }
 
 a:visited {
-    color: #DB0000;
+    color: #b90000;
 }
 
 a:hover {
-    color: #ac0000;
+    color: #b90000;
 }
 
 a:active {
-    color: #ac0000;
-}
+    color: #b90000;
+} */
 
 
 h1, h2, h3, h4, h5, h6 {
-    color: #9da8be;
+    color: #b1bdd6;
+}
+
+/* Modal overlay styles */
+.modal {
+    position: fixed;
+    inset: 0;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    z-index: 9999;
+}
+.modal.open {
+    display: flex;
+}
+.modal-backdrop {
+    position: absolute;
+    inset: 0;
+    background: #000000;
+}
+.modal-content {
+    position: relative;
+    background: #ffffff;
+    color: #1f2022;
+    max-width: 90vw;
+    max-height: 90vh;
+    overflow: auto;
+    border-radius: 8px;
+    padding: 20px;
+    z-index: 2;
+}
+.modal-close {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    background: #ff3a3a;
+    color: #ffffff;
+    border: none;
+    border-radius: 4px;
+    padding: 6px 10px;
+    cursor: pointer;
+}
+
+.review-popup {
+display: flex;
+
 }
