@@ -1,3 +1,4 @@
 Uuden arvostelun lisääminen:
 Luo uusi html tiedosto paikka1.html pohjalta
-Lisää uudet tiedot uuteen html dokumenttiin
+Lisää uudet tiedot luotuun html dokumenttiin
+copypaste script.js olevan paikan modaali-ikkunan koodi ja vaihda sen numerot täsmäämään uutta paikkaa

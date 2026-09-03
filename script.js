@@ -24,7 +24,7 @@ function closeModal() {
 	document.body.style.overflow = '';
 }
 
-document.addEventListener('DOMContentLoaded', () => {
+document.addEventListener('DOMContentLoaded', () => { // Paikka 1 -arvostelun modaali-ikkunan koodi. Avaa popupin arvostelusta.
 	const openBtn = document.getElementById('paikka1-btn');
 	if (openBtn) {
 		openBtn.addEventListener('click', () => openModal('paikka1.html'));
