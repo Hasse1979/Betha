@@ -250,7 +250,7 @@ p, h1, h2, h3, h4, h5, h6 {
 
 .review-popup {
 display: flex;
-max-width: 100vw;
+max-width: 80vw;
 flex-direction: column;
 align-items: center;
 margin: 1px;
