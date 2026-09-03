@@ -36,3 +36,16 @@ document.addEventListener('DOMContentLoaded', () => {
 	const backdrop = document.getElementById('modal-backdrop');
 	if (backdrop) backdrop.addEventListener('click', closeModal);
 });
+
+document.addEventListener('DOMContentLoaded', () => {
+	const openBtn = document.getElementById('paikka2-btn');
+	if (openBtn) {
+		openBtn.addEventListener('click', () => openModal('paikka2.html'));
+	}
+
+	const closeBtn = document.getElementById('modal-close');
+	if (closeBtn) closeBtn.addEventListener('click', closeModal);
+
+	const backdrop = document.getElementById('modal-backdrop');
+	if (backdrop) backdrop.addEventListener('click', closeModal);
+});
